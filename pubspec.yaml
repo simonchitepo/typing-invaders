@@ -1,0 +1,62 @@
+name: type_invaders
+description: "Typing Invaders (Flutter port)."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.13.1
+  msix: ^3.16.13
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/app_icon.png
+    - assets/audio/bg.mp3
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/app_icon.png"
+
+  adaptive_icon_background: "#FBFBF7"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    icon_size: 256
+
+# 🔥 Microsoft Store MSIX CONFIG (FIXED)
+msix_config:
+  display_name: Typing invaders
+  publisher_display_name: cyph3r
+
+  # MUST match Partner Center EXACTLY
+  identity_name: cyph3r.Typinginvaders
+  publisher: CN=7456A62D-B4E5-49F3-9485-ADF80146DE6A
+
+  # Critical: bind to your Store package family name
+  package_family_name: cyph3r.Typinginvaders_fb6bh328pz6dt
+
+  msix_version: 1.0.0.0
+
+  logo_path: assets/icon/app_icon.png
+  start_menu_icon_path: assets/icon/app_icon.png
+  tile_icon_path: assets/icon/app_icon.png
+
+  store: true
