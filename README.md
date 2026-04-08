@@ -48,22 +48,6 @@ This project demonstrates:
 
 ---
 
-## ▶️ Getting Started
-
-### Prerequisites
-
-- Flutter SDK installed
-- Dart SDK
-- Android Studio / VS Code
-
-### Installation
-
-```bash
-git clone https://github.com/simonchitepo/typing-invaders.git
-cd typing-invaders
-flutter pub get
-flutter run
-
 ## 📊 Case Studies
 
 ### 1. Real-Time Input Handling
@@ -179,3 +163,18 @@ Scalability and maintainability require clear separation between logic and prese
 - Cleaner architecture aligned with best practices  
 
 ---
+## ▶️ Getting Started
+
+### Prerequisites
+
+- Flutter SDK installed
+- Dart SDK
+- Android Studio / VS Code
+
+### Installation
+
+```bash
+git clone https://github.com/simonchitepo/typing-invaders.git
+cd typing-invaders
+flutter pub get
+flutter run
